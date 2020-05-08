@@ -11,16 +11,20 @@ class Compare
       return "You must input a real word!"
     elsif @word_one == @word_two
       return "These are Anagrams!"
+    elsif palindrome?() == true
+      return "This a Palindrome!"
     else
       return "These are Antigrams!"  
     end 
   end
 
   def palindrome?
-    # if @word_one == @word_two.reverse
-    #   return true
-    # else
+    if @word_one == @word_one.reverse
+      return true
+    else
       return "These are not Palindromes!"
+    end
+  end
 
 
   def isword(word)
