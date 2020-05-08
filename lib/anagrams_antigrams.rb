@@ -7,7 +7,7 @@ class Compare
   end
 
   def anagram
-    if @word_one == @word_two# compare two words by individual letter
+    if @word_one == @word_two
     end
     return "These are Anagrams!"  
   end  
