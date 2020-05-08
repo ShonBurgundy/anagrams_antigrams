@@ -7,6 +7,7 @@ class Compare
   end
 
   def anagram
+    # if includes?["a", ]
     if @word_one == @word_two
     end
     return "These are Anagrams!"  
