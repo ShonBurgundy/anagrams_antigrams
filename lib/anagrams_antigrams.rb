@@ -12,7 +12,7 @@ class Compare
     elsif @word_one == @word_two
       return "These are Anagrams!"
     else
-      return "These are Antigrams"  
+      return "These are Antigrams!"  
     end 
   end
 

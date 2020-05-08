@@ -22,7 +22,7 @@ describe("#Compare") do
 
     it ('returns "These are Antigrams" if inputted words do not having matching letters') do
       compare = Compare.new("hi","bye")
-      expect(compare.anagram()).to(eq("These are Antigrams"))
+      expect(compare.anagram()).to(eq("These are Antigrams!"))
     end
 
     it ('returns "These are anagrams" if multiple inputted words match letters') do
@@ -31,7 +31,7 @@ describe("#Compare") do
     end
 
     it ('returns "These are antigrams" if multiple inputted words match letters') do
-      compare = Compare.new()
+      compare = Compare.new("fun house", "tea ruby")
       expect(compare.anagram()).to(eq("These are Antigrams!"))
     end
   end
