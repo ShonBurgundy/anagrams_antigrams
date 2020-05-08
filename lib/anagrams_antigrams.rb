@@ -28,5 +28,3 @@ class Compare
     end  
   end  
 end
-
-# @word_one || @word_two.any? { |i| ["a", "e", "i", "o", "u", "y"].exclude?(i) }
