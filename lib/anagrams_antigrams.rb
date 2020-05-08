@@ -7,9 +7,22 @@ class Compare
   end
 
   def anagram
-    # if includes?["a", ]
-    if @word_one == @word_two
+    if !(isword(@word_one) && isword(@word_two))  
+      return "You must input a real word!"
+    elsif @word_one == @word_two
     end
     return "These are Anagrams!"  
+  end
+
+  def isword(word)
+    if !word
+      return false
+    end
+    vowels_in_word = word & ["a", "e", "i", "o", "u", "y"]
+    if vowels_in_word 
+      return true
+    else
+      return false
+    end  
   end  
-end  
+end
