@@ -10,8 +10,10 @@ class Compare
     if !(isword(@word_one) && isword(@word_two))  
       return "You must input a real word!"
     elsif @word_one == @word_two
-    end
-      return "These are Anagrams!"  
+      return "These are Anagrams!"
+    else
+      return "These are Antigrams"  
+    end 
   end
 
   def isword(word)
