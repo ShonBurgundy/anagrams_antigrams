@@ -1,13 +1,13 @@
 class Compare
-  attr_writer(:wordOne, :wordTwo)
+  attr_writer(:word_one, :word_two)
   
-  def initialize(wordOne,wordTwo)
-    @wordOne = wordOne.downcase.split('').sort
-    @wordTwo = wordTwo.downcase.split('').sort
+  def initialize(word_one,word_two)
+    @word_one = word_one.downcase.split('').sort
+    @word_two = word_two.downcase.split('').sort
   end
 
   def anagram
-    if @wordOne == @wordTwo# compare two words by individual letter
+    if @word_one == @word_two# compare two words by individual letter
     end
     return "These are Anagrams!"  
   end  
