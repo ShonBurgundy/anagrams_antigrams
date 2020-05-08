@@ -16,6 +16,13 @@ class Compare
     end 
   end
 
+  def palindrome?
+    # if @word_one == @word_two.reverse
+    #   return true
+    # else
+      return "These are not Palindromes!"
+
+
   def isword(word)
     if !word
       return false
