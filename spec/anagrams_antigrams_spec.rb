@@ -9,6 +9,11 @@ describe("#Compare") do
       compare = Compare.new("Bury","Ruby")
       expect(compare.anagram()).to(eq("These are Anagrams!"))
     end
+
+    it ('returns "These are antigrams" if inputted words do not matching letters REGARDLESS of letter casing') do
+      compare = Compare.new()
+      expect(compare.anagram()).to(eq("These are Anagrams!"))
+    end
   
     it ('returns "These are anagrams" if inputted words match letters') do
       compare = Compare.new("bury","ruby")
@@ -20,7 +25,7 @@ describe("#Compare") do
       expect(compare.anagram()).to(eq("You must input a real word!"))
     end
 
-    it ('returns "These are Antigrams" if inputted words do not having matching letters') do
+    it ('returns "These are Antigrams" if inputted words do not have matching letters') do
       compare = Compare.new("hi","bye")
       expect(compare.anagram()).to(eq("These are Antigrams!"))
     end
