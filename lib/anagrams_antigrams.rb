@@ -6,26 +6,26 @@ class Compare
     @word_two = word_two.downcase
   end
 
-def anagram
-  if @word_one && @word_two.empty?
-    if palindrome?()
+  def anagram
+    if @word_one && @word_two.empty?
+      if palindrome?()
         return "This is a Palindrome!"
-    else
-      return "This is not a Palindrome!"
+      else
+        return "This is not a Palindrome!"
+      end
     end
+
+    @word_one = format(@word_one)
+    @word_two = format(@word_two)
+
+    if !(isword(@word_one) && isword(@word_two))  
+      return "You must input a real word!"
+    elsif @word_one == @word_two
+      return "These are Anagrams!"
+    else
+      return "These are Antigrams!"  
+    end 
   end
-
-  @word_one = format(@word_one)
-  @word_two = format(@word_two)
-
-  if !(isword(@word_one) && isword(@word_two))  
-    return "You must input a real word!"
-  elsif @word_one == @word_two
-    return "These are Anagrams!"
-  else
-    return "These are Antigrams!"  
-  end 
-end
 
   def palindrome?
     warn @word_one

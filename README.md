@@ -16,6 +16,7 @@ _This program will inform user if inputted words are anagrams or antigrams._
 | **The program will not be case sensitive** | Input:Eat,Tea | Output:"These are anagrams!" |
 | **The program will make sure user input contains a vowel** | Input:Plwqd | Output:"You must input real word!" |
 | **The program will compare multiple words to check if they are anagrams** | Input:Bury Ruby Tea Eat | Output:"This sentence has 2 anagrams!" |
+| **The program will compare input to itself in reverse to check for a Palindrome** | Input:racecar | Output:"This is a Palindrome" |
 
 
 ## Setup/Installation Requirements
