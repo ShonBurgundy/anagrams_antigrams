@@ -11,7 +11,7 @@ def anagram
     if palindrome?()
         return "This is a Palindrome!"
     else
-      return "These are not Palindromes!"
+      return "This is not a Palindrome!"
     end
   end
 
