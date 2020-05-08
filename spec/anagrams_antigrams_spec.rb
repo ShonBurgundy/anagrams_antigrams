@@ -6,8 +6,8 @@ describe("#Compare") do
 
   describe("#anagram") do
     it ('returns "These are anagrams" if inputted words match letters') do
-      compare = Compare.new()
-      expect(compare.anagram("bury","ruby")).to(eq("These are anagrams!"))
+      compare = Compare.new("bury","ruby")
+      expect(compare.anagram()).to(eq("These are Anagrams!"))
     end
   end
 end  
