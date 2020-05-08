@@ -20,11 +20,11 @@ _This program will inform user if inputted words are anagrams or antigrams._
 
 ## Setup/Installation Requirements
 
-1. In the terminal, type 'git clone https://github.com/ShonBurgundy/currency-exchange'.
-1. Enter the directory, with 'cd currency' 
+1. In the terminal, type 'git clone https://github.com/ShonBurgundy/anagrams_antigrams'.
+1. Enter the directory, with 'cd anagrams_antigrams' 
 1. Open the downloaded directory in a text editor of your choice.
   (VSCode, Atom, etc.) 
-1. 
+1. Run bundle in terminal to download gems
 
 
 ## Known Bugs

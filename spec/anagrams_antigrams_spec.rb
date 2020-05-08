@@ -46,9 +46,18 @@ describe("#Compare") do
     end
 
     it ('returns "These are not Palindromes!" if inputted word not read the same in reverse') do
-      compare = Compare.new("racecar", "")
-      expect(compare.palindrome?()).to(eq("These are not Palindromes!"))
+      compare = Compare.new("ruby", "")
+      warn compare.palindrome?()
+      expect(compare.anagram()).to(eq("These are not Palindromes!"))
     end
+
+    it ('returns "This is a Palindrome!" if inputted word not read the same in reverse') do
+      compare = Compare.new("ruby", "")
+      warn compare.palindrome?()
+      expect(compare.anagram()).to(eq("This is a Palindrome!"))
+    end
+
+  
   end
 end  
 
