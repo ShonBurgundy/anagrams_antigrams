@@ -29,6 +29,11 @@ describe("#Compare") do
       compare = Compare.new("bury eat", "tea ruby")
       expect(compare.anagram()).to(eq("These are Anagrams!"))
     end
+
+    it ('returns "These are antigrams" if multiple inputted words match letters') do
+      compare = Compare.new()
+      expect(compare.anagram()).to(eq("These are Antigrams!"))
+    end
   end
 end  
 
