@@ -11,7 +11,7 @@ class Compare
       return "You must input a real word!"
     elsif @word_one == @word_two
     end
-    return "These are Anagrams!"  
+      return "These are Anagrams!"  
   end
 
   def isword(word)

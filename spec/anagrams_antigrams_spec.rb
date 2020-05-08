@@ -19,6 +19,11 @@ describe("#Compare") do
       compare = Compare.new("mwt","plq")
       expect(compare.anagram()).to(eq("You must input a real word!"))
     end
+
+    it ('returns "These are Antigrams" if inputted words do not having matching letters') do
+      compare = Compare.new("","")
+      expect(compare.anagram()).to(eq(""))
+    end
   end
 end  
 
