@@ -19,10 +19,12 @@ class Compare
       return false
     end
     vowels_in_word = word & ["a", "e", "i", "o", "u", "y"]
-    if vowels_in_word 
-      return true
-    else
+    if vowels_in_word.empty?
       return false
+    else
+      return true
     end  
   end  
 end
+
+# @word_one || @word_two.any? { |i| ["a", "e", "i", "o", "u", "y"].exclude?(i) }
