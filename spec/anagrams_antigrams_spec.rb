@@ -57,5 +57,4 @@ describe("#Compare") do
       expect(compare.anagram()).to(eq("This is a Palindrome!"))
     end
   end
-end  
-
+end
